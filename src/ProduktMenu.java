@@ -19,7 +19,15 @@ public class ProduktMenu {
         return cena;}
     public String getKategoria() {
         return kategoria;}
-    public int getLiczbaProduktow() {
+    public static int getLiczbaProduktow() {
         return LiczbaProduktow;}
+
+    public String toString() {
+        return kod + " " + nazwa + " " + cena + " zl";}
+
+    public boolean equals(Object obj) {
+        ProduktMenu inny = (ProduktMenu) obj;
+        return this.kod.equals(inny.kod);}
 }
+
 
